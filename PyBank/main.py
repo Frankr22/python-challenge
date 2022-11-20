@@ -5,7 +5,7 @@ import csv
 import os
 
 # Read csv file
-csvpath = os.path.join('..', 'PyBank\Resources', 'budget_data.csv')
+csvpath = os.path.join('Resources', 'budget_data.csv')
 
 with open(csvpath) as csvfile:
 
