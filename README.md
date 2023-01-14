@@ -1,108 +1,43 @@
-# python-challenge
-Repository for DA Bootcamp Module 3 Python challenge
+# Election Results Analysis
 
-# Unit 3 Homework: Python
+This repository contains two Python script that analyze the financial records of a company.
 
-In this assignment, you'll complete two challenges in which you'll apply your new Python skills. 
+## 1. PyBank
 
-## Background
+This script analyzes the financial records of a company by calculating the following values:
 
-It's time to put away the Excel sheet and join the big leagues. Welcome to the world of programming with Python. In this homework assignment, you'll use the concepts you've learned to complete the **two** Python challenges, PyBank and PyPoll.
+The total number of months included in the dataset
+The net total amount of "Profit/Losses" over the entire period
+The average of the changes in "Profit/Losses" over the entire period
+The greatest increase in profits (date and amount) over the entire period
+The greatest decrease in losses (date and amount) over the entire period
 
-Both of these challenges present a real-world situation where your newfound Python scripting skills can come in handy. These challenges aren't easy, so expect some hard work ahead!
+## 2. PyPoll
 
-## Setup
+This script analyzes the votes of a given poll data and calculates the following values:
 
-Before starting the assignment, be sure to do the following:
+The total number of votes cast
+A complete list of candidates who received votes
+The percentage of votes each candidate won
+The total number of votes each candidate won
+The winner of the election based on popular vote
 
-* Create a new repository for this project called `python-challenge`. **Do not add this homework assignment to an existing repository**.
+## Requirements
 
-* Clone the new repository to your computer.
+Python 3
+csv module
 
-* Inside your local git repository, create a directory for each Python challenge. Use folder names corresponding to the challenges: **PyBank** and  **PyPoll**.
+## Usage
 
-* Inside of each folder that you just created, add the following:
+Clone the repository to your local machine using git clone https://github.com/yourusername/election-results-analysis.git
+Place your poll data in a csv file named election_data.csv in the same directory as the script. The csv file should have the following columns in order: Voter ID, County, and Candidate.
+Run the script using python3 election_results.py
 
-  * A new file called `main.py`. This will be the main script to run for each analysis.
-  * A `Resources` folder that contains the CSV files you used. Make sure your script has the correct path to the CSV file.
-  * An `analysis` folder that contains your text file that has the results from your analysis.
+## Output
+The script will print the analysis to the terminal and will also export text files with the same analysis.
 
-* Push these changes to GitHub or GitLab.
+*Please note that the above code is just an example and it's not guaranteed to work with all dataset. Make sure to check and debug the code before running it.
 
-## PyBank Instructions
+## Contribution
 
-In this challenge, you are tasked with creating a Python script to analyse the financial records of your company. You will give a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: "Date" and "Profit/Losses". (Thankfully, your company has rather lax standards for accounting, so the records are simple.)
-
-Your task is to create a Python script that analyses the records to calculate each of the following:
-
-* The total number of months included in the dataset
-
-* The net total amount of "Profit/Losses" over the entire period
-
-* The changes in "Profit/Losses" over the entire period, and then the average of those changes
-
-* The greatest increase in profits (date and amount) over the entire period
-
-* The greatest decrease in profits (date and amount) over the entire period
-
-Your analysis should look similar to the following:
-
-  ```text
-  Financial Analysis
-  ----------------------------
-  Total Months: 86
-  Total: $22564198
-  Average Change: $-8311.11
-  Greatest Increase in Profits: Aug-16 ($1862002)
-  Greatest Decrease in Profits: Feb-14 ($-1825558)
-  ```
-
-In addition, your final script should both print the analysis to the terminal and export a text file with the results.
-
-## PyPoll Instructions
-
-In this challenge, you are tasked with helping a small, rural U.S. town modernise its vote counting process.
-
-You will be given a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following:
-
-* The total number of votes cast
-
-* A complete list of candidates who received votes
-
-* The percentage of votes each candidate won
-
-* The total number of votes each candidate won
-
-* The winner of the election based on popular vote.
-
-Your analysis should look similar to the following:
-
-
-  ```text
-  Election Results
-  -------------------------
-  Total Votes: 369711
-  -------------------------
-  Charles Casper Stockham: 23.049% (85213)
-  Diana DeGette: 73.812% (272892)
-  Raymon Anthony Doane: 3.139% (11606)
-  -------------------------
-  Winner: Diana DeGette
-  -------------------------
-  ```
-
-In addition, your final script should both print the analysis to the terminal and export a text file with the results.
-
-## Hints and Considerations
-
-* Consider what you've learned so far. You've learned how to import modules like `csv`; to read and write files in various formats; to store contents in variables, lists, and dictionaries; to iterate through basic data structures; and to debug along the way. Using what you've learned, try to break down your tasks into discrete mini-objectives. 
-
-* The datasets for these challenges are quite large. This was done purposefully, as it showcases one of the limits of Excel-based analysis. As data analysts, our first instinct is often to go straight to Excel, but creating scripts in Python can provide us with more robust options for handling big data.
-
-* Write one script for each dataset provided. Run your script separately to make sure that the code works for its respective dataset.
-
-* Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. You get what you put in, and the art of programming is extremely unforgiving to those who don't do their own work. 
-
-* Start early, and reach out for help when you need it! Be sure to identify specific questions for your instructors and TAs so that they understand your thought process and can provide targeted guidance.
-
-* Always commit your work and back it up with pushes to GitHub or GitLab. You don't want to lose hours of your work! Also make sure that your repo has a detailed `README.md` file.
+Feel free to contribute to this repository by submitting a pull request with any improvements or fixes.
